@@ -8,8 +8,9 @@ Yes. Calabash for Appcelerator Alloy iOS and Android
 Install the module with: `npm install -g ticalabash`
 
 
-## examples
+## Examples 
 `ti calabash --platform=[android,ios] `
+
 
 If you don't have a features directory at the project root level, it will be created.
 The calabash command will rebuild your android or iOS binary every time.
@@ -23,5 +24,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## License
 License: MIT (c) 2014 
-Matt Apperson / Apperson Labs, LLC 
+Matt Apperson / Apperson Labs
 Andrew McElroy / Codex Labs, LLC
