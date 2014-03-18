@@ -9,13 +9,25 @@ var path = require('path'),
 console.log('Installing titanium stuff...');
 
 console.log('--- Installing Build Command(s) ---');
-exec('ti', ['config', '-a', 'paths.commands', path.join( __dirname , 'plugin')], null, function() {
-	   /* We are going to need to ensure we are using ruby 1.9 or greater */
-		 /* We are also going to need to check for bundler. install it if it doesn't exist */
-		 /* now it is time to run bundler and install calabash-android and ios */
 
-    console.info('Titanium CLI command installed.');
+
+exec('ruby', ['-v'], null, function(e) {
+
+		exec('bundle', ['install'], null, function(e) {
+		     
+			exec('ti', ['config', '-a', 'paths.commands', path.join( __dirname , 'plugin')], null, function() {
+ 				console.info('Titanium CLI command installed.');
+
+		});
+
+		});
 
 });
+
+
+
+
+
+
 
 
