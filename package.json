@@ -24,6 +24,7 @@
   "homepage": "https://github.com/appersonlabs/TiCalabash",
   "dependencies": {
     "commander": "^2.1.0",
-    "pkginfo": "^0.3.0"
+    "pkginfo": "^0.3.0",
+    "node-appc": "^0.2.0"
   }
 }
