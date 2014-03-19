@@ -1,0 +1,10 @@
+<Alloy>
+    <Collection src="Fugitive" />
+    <Tab id="capturedTab" title="Captured">
+        <Window id="capturedWindow"  title="Captured" class='container'>
+            <TableView id="table" dataCollection="Fugitive" dataFilter="dofilter">
+                <Require src="FugitiveRow"/>
+            </TableView>
+        </Window>
+    </Tab>
+</Alloy>
