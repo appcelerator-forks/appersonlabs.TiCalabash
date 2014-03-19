@@ -40,7 +40,7 @@ exports.run = function(logger, config, cli, finished) {
 		console.info("yes. it is iphone alright");
 
 
-		/****
+		/**
 		#do a clean first then build and run calabash-ios setup
 		cd build/iphone && calabash-ios setup
 
@@ -51,8 +51,8 @@ exports.run = function(logger, config, cli, finished) {
 		****/
 	}
 
-	/* okay. I know this is crap code, but if they are not using ios or android, this command should gracefully bow out*/
-	if(platform !== 'android' && platform !== 'ios' && platform !=='iphone' ) {
+	/* if they are not using ios or android, this command should gracefully bow out*/
+	if( ['android', 'ios', 'iphone'].indexOf( platform ) === -1 ) {
 		console.info('Calabash does not support your kind. \n If you are doing mobile web, this statement is a lie and Andrew is just being lazy atm.');
     }
 
