@@ -3,7 +3,8 @@
 
 var exec = require('../lib/exec'),
     fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+    appDir = path.dirname(require.main.filename);
 /** command description. */
 exports.cliVersion = '>=3.2.1';
 exports.title = 'Build w/Calabash';
@@ -55,28 +56,22 @@ exports.run = function(logger, config, cli, finished) {
         throw 'Calabash does not support your kind. \n If you are doing mobile web, this statement is a lie and Andrew is just being lazy atm.';
     }
 
-    fs.exists(path.join(projectDir, 'tiapp.xml'), function(project_exists) {
-        //if (project_exists) {
-			if (!fs.existsSync('features')) {
-							var featuresFolder = path.join(appDir, '..', '..', 'ticalabash/assets/features');
+    if (fs.existsSync(path.join(projectDir, 'tiapp.xml'))) {
+        if (!fs.existsSync(path.join(projectDir, 'features'))) {
+            var featuresFolder = path.join(appDir, '..', '..', 'ticalabash/assets/features');
+            exec('cp', ['-r', featuresFolder, projectDir, 'features'], null, function() {
+                console.info('Features Directory created.');
 
-							exec('cp', ['-r', featuresFolder, projectDir, 'features'], null, function() {
-								console.info('Features Directory created.');
+            });
 
-							});
+        }
+        if (fs.existsSync(path.join(projectDir, 'app'))) {
+            // do alloy crap here...
+        }
 
-						};
-						
-        fs.exists(path.join(projectDir, 'app'), function(is_alloy) {
-            if (is_alloy) {
-                // do alloy crap here...
-            }
-
-            // require and run the correct platform...
-            require('../lib/run_' + (platform === 'iphone' ? 'ios' : platform))(logger, config, cli, projectDir, finished);
-        });
-        // } else {
-        //     throw "Invalid Titanium project location";
-        // }
-    });
+        // require and run the correct platform...
+        require('../lib/run_' + (platform === 'iphone' ? 'ios' : platform))(logger, config, cli, projectDir, finished);
+    } else {
+        throw "Invalid Titanium project location";
+    }
 };
