@@ -2,7 +2,10 @@
 
 # TiCalabash Package
 
-Yes. Calabash for Appcelerator Alloy iOS and Android
+[![NPM](https://nodei.co/npm/ticalabash.png)](https://nodei.co/npm/ticalabash/)
+
+Yes. Calabash for Appcelerator Titanium (vanilla and Alloy) iOS and Android
+
 
 ## Getting Started
 Install the module with: `npm install -g ticalabash`
