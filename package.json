@@ -17,7 +17,16 @@
     "ios",
     "android"
   ],
-  "author": "Matt Apperson",
+  "maintainers": [
+    {
+      "name": "Matt Apperson",
+      "email": "matt@appersonlabs.com"
+    },
+    {
+      "name": "Andrew McElroy",
+      "email": "amcelroy@codexlabs.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appersonlabs/TiCalabash/issues"
