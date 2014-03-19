@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A wrapper for the Calabash testing framework for use with Titanium Mobile",
   "scripts": {
-    "postinstall": "./install"
+    "postinstall": "./install",
+     "test": "mocha test -w"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,9 @@
     "pkginfo": "^0.3.0",
     "node-appc": "^0.2.0",
 		"tiapp":"0.0.2"
-  }
+  },
+   "devDependencies": {
+   "mocha": "*",
+   "should": ">= 0.0.1"
+ }
 }
