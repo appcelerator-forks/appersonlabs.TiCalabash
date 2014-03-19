@@ -10,7 +10,7 @@ Scenario: Add a Fugitive
 	And I enter "Aslak Hellesoy" into input field number 1
 	And I touch the "Save" button
 	Then I should see text containing "Aslak Hellesoy"
-	And take picture
+	
 
 Scenario: Select a Fugitive
 	Given I am on the Home Screen
