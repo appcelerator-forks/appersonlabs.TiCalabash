@@ -58,8 +58,8 @@ exports.run = function(logger, config, cli, finished) {
 
     if (fs.existsSync(path.join(projectDir, 'tiapp.xml'))) {
         if (!fs.existsSync(path.join(projectDir, 'features'))) {
-            var featuresFolder = path.join(appDir, '..', '..', 'ticalabash/assets/features');
-            exec('cp', ['-r', featuresFolder, projectDir, 'features'], null, function() {
+            var featuresFolder = path.resolve(path.join(appDir, '..', '..', 'ticalabash', 'assets', 'features'));
+            exec('cp', ['-r', featuresFolder, path.join(projectDir, 'features')], null, function() {
                 console.info('Features Directory created.');
 
             });
