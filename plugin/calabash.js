@@ -3,7 +3,8 @@
 
 var exec = require('../lib/exec'),
     fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+	appDir = path.dirname(require.main.filename);;
 /** command description. */
 exports.cliVersion = '>=3.2.1';
 exports.title = 'Build w/Calabash';
@@ -39,7 +40,16 @@ exports.run = function(logger, config, cli, finished) {
 
     fs.exists(path.join(projectDir, 'tiapp.xml'), function(project_exists) {
         if (project_exists) {
+			if (!fs.existsSync('features')) {
+				var featuresFolder = path.join(appDir, '../../', 'ticalabash/assets/features');
 
+				exec('cp', ['-r', featuresFolder, 'features'], null, function() {
+					console.info('Features Directory created.');
+
+				});
+
+			};
+			
             fs.exists(path.join(projectDir, 'app'), function(is_alloy) {
                 if (is_alloy) {
                     // do alloy crap here...
