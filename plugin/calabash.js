@@ -28,8 +28,13 @@ exports.config = function() {
  * @param {Function} finished - Callback when the command finishes
  */
 exports.run = function(logger, config, cli, finished) {
-    var platform = cli.argv.platform || cli.argv.p ;
-    var passthroughCommands = ['build'].concat(cli.argv['$_'].slice(3));
+    var platform = cli.argv.platform || cli.argv.p,
+        passthroughCommands = ['build'].concat(cli.argv['$_'].slice(3));
+
+    /* if they are not using ios or android, this command should gracefully bow out*/
+    if( ['android', 'ios', 'iphone'].indexOf( platform ) === -1 ) {
+        throw 'Calabash does not support your kind. \n If you are doing mobile web, this statement is a lie and Andrew is just being lazy atm.';
+    }
 
 
     if(platform === 'android') {
@@ -51,10 +56,7 @@ exports.run = function(logger, config, cli, finished) {
 		****/
 	}
 
-	/* if they are not using ios or android, this command should gracefully bow out*/
-	if( ['android', 'ios', 'iphone'].indexOf( platform ) === -1 ) {
-		console.info('Calabash does not support your kind. \n If you are doing mobile web, this statement is a lie and Andrew is just being lazy atm.');
-    }
+
 
     // pass through the command args to Ti `build` commands
    /** exec('ti', passthroughCommands, null, function(output) {
