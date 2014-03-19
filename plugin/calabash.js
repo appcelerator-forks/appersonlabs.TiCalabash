@@ -49,7 +49,7 @@ exports.config = function() {
  */
 exports.run = function(logger, config, cli, finished) {
     var platform = (cli.argv.platform || cli.argv.p),
-        projectDir = process.env.SOURCE_ROOT ? path.join(process.env.SOURCE_ROOT, '..', '..') : '.';
+        projectDir = path.resolve(process.env.SOURCE_ROOT ? path.join(process.env.SOURCE_ROOT, '..', '..') : '.');
 
     /* if they are not using ios or android, this command should gracefully bow out*/
     if (['android', 'ios', 'iphone'].indexOf(platform) === -1) {
