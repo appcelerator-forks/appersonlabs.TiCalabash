@@ -17,7 +17,25 @@ exports.desc = 'Builds a project and injects the Calabash framework';
  */
 exports.config = function() {
     return {
-        skipBanner: true
+        skipBanner: true,
+        keystore_location: {
+            abbr: 'K',
+            desc: 'the location of the keystore used to sign this application',
+            hint: 'keystore location',
+            skipValueCheck: true
+        },
+        password: {
+            abbr: 'P',
+            desc: 'the password of the keystore used to sign this application',
+            hint: 'keystore password',
+            skipValueCheck: true
+        },
+        alias: {
+            abbr: 'A',
+            desc: 'the alias of the keystore used to sign this application',
+            hint: 'keystore alias',
+            skipValueCheck: true
+        },
     };
 };
 
@@ -38,18 +56,18 @@ exports.run = function(logger, config, cli, finished) {
     }
 
     fs.exists(path.join(projectDir, 'tiapp.xml'), function(project_exists) {
-        if (project_exists) {
+        //if (project_exists) {
 
-            fs.exists(path.join(projectDir, 'app'), function(is_alloy) {
-                if (is_alloy) {
-                    // do alloy crap here...
-                }
+        fs.exists(path.join(projectDir, 'app'), function(is_alloy) {
+            if (is_alloy) {
+                // do alloy crap here...
+            }
 
-                // require and run the correct platform...
-                require('../lib/run_' + (platform === 'iphone' ? 'ios' : platform))(logger, config, cli, projectDir, finished);
-            });
-        } else {
-            throw "Invalid Titanium project location";
-        }
+            // require and run the correct platform...
+            require('../lib/run_' + (platform === 'iphone' ? 'ios' : platform))(logger, config, cli, projectDir, finished);
+        });
+        // } else {
+        //     throw "Invalid Titanium project location";
+        // }
     });
 };
