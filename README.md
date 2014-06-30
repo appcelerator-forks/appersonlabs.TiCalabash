@@ -1,8 +1,8 @@
 ## This is beta software ##
-# the single biggest reason is because of the ruby dependency
-# if you  do not have either rvm or rbenv installed then you may have issues installing this package
-# system ruby for mac can have issues
-# the designation from beta to full production is a high priority and moving quickly.
+ the single biggest reason is because of the ruby dependency
+if you  do not have either rvm or rbenv installed then you may have issues installing this package
+ system ruby for mac can have issues
+ the designation from beta to full production is a high priority and moving quickly.
 
 
 # TiCalabash Package
