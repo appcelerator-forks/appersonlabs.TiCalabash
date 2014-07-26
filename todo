@@ -1,0 +1,11 @@
+this is a rough todo list since i am off line
+fix the android default folder structure.. it is currently horribly wrong.
+fix the implicit assumption that i have ruby 2.x on a mac and that it doesn't require sudo.. it might
+fix massive discrepancy between ios pre defined steps and android steps
+fix dont create the ios harness every time
+fix build before calabash shouldn't be required
+fix figure out how to "take control" on ios from within jenkins
+
+
+fix preso
+bump version number signficantly

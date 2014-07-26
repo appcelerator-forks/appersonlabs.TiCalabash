@@ -1,10 +1,10 @@
 {
   "name": "ticalabash",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "A wrapper for the Calabash testing framework for use with Titanium Mobile",
   "scripts": {
-    "postinstall": "./install",
-     "test": "mocha test -w"
+    "postinstall": "node install",
+    "test": "mocha test -w"
   },
   "repository": {
     "type": "git",
