@@ -60,13 +60,10 @@ exports.run = function(logger, config, cli, finished) {
         if (!fs.existsSync(path.join(projectDir, 'features'))) {
             var featuresFolder = path.resolve(path.join(appDir, '..', '..', 'ticalabash', 'assets', 'features'));
             var cucumberYML = path.resolve(path.join(appDir, '..', '..', 'ticalabash', 'assets', 'cucumber.yml'));
-            exec('cp', ['-r', featuresFolder, path.join(projectDir, 'features')], null, function() {
-				exec('cp', ['-r', cucumberYML, path.join(projectDir)], null, function() {
-					console.log('cucumberYML is coming from'+ cucumberYML);
-	                console.info('Features Directory created and cucumber.yml is set.');
-
-	            });               
-
+            exec('cp', ['-r', featuresFolder, path.join(projectDir, 'features')], null, function() {		
+				fs.createReadStream(cucumberYML).pipe(fs.createWriteStream(projectDir+"/cucumber.yml"));
+				console.log('cucumberYML is coming from'+ cucumberYML);
+                console.info('Features Directory created and cucumber.yml is set.');
             });
 
         }
