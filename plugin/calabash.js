@@ -53,14 +53,19 @@ exports.run = function(logger, config, cli, finished) {
 
     /* if they are not using ios or android, this command should gracefully bow out*/
     if (['android', 'ios', 'iphone'].indexOf(platform) === -1) {
-        throw 'Bitch! Calabash does not support your build target. \n Mobile Web support is planned, but not supported at this time.';
+        throw 'Calabash does not support your build target. \n Mobile Web support is planned, but not supported at this time.';
     }
 
     if (fs.existsSync(path.join(projectDir, 'tiapp.xml'))) {
         if (!fs.existsSync(path.join(projectDir, 'features'))) {
             var featuresFolder = path.resolve(path.join(appDir, '..', '..', 'ticalabash', 'assets', 'features'));
+            var cucumberYML = path.resolve(path.join(appDir, '..', '..', 'ticalabash', 'assets', 'cucumber.yml'));
             exec('cp', ['-r', featuresFolder, path.join(projectDir, 'features')], null, function() {
-                console.info('Features Directory created.');
+				exec('cp', ['-r', cucumberYML, path.join(projectDir)], null, function() {
+					console.log('cucumberYML is coming from'+ cucumberYML);
+	                console.info('Features Directory created and cucumber.yml is set.');
+
+	            });               
 
             });
 

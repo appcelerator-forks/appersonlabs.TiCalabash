@@ -5,6 +5,5 @@ Feature: Home Screen
 
 Scenario: See Home Screen
 	Given I am on the Home Screen
-	When I touch "Tab2"
-	Then I should see text containing "I am Window 2"
+	Then I should see text containing "Hello, World"
 	And take picture

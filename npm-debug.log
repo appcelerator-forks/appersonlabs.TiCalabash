@@ -1,0 +1,288 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.2
+3 info using node@v0.10.13
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/andrewmcelroy/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+12 verbose folder .
+13 info prepublish ticalabash@1.0.10
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/andrewmcelroy/.npm/1f1177db-tar.lock
+16 silly lockFile 7f84c347-592773-0-762559725670144-tmp-tgz tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+17 verbose lock tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz /Users/andrewmcelroy/.npm/7f84c347-592773-0-762559725670144-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 7f84c347-592773-0-762559725670144-tmp-tgz tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+21 silly lockFile 7f84c347-592773-0-762559725670144-tmp-tgz tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+22 verbose tar unpack /var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+23 silly lockFile 2657596b-592773-0-762559725670144-package tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package
+24 verbose lock tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package /Users/andrewmcelroy/.npm/2657596b-592773-0-762559725670144-package.lock
+25 silly lockFile 7f84c347-592773-0-762559725670144-tmp-tgz tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+26 verbose lock tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz /Users/andrewmcelroy/.npm/7f84c347-592773-0-762559725670144-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry Gemfile.lock
+32 silly gunzTarPerm extractEntry todo
+33 silly gunzTarPerm extractEntry assets/custom_calabash_ios_install.rb
+34 silly gunzTarPerm extractEntry assets/features/android/helpers/utils_android.rb
+35 silly gunzTarPerm extractEntry assets/features/android/pages/.gitkeep
+36 silly gunzTarPerm extractEntry assets/features/android/support/app_life_cycle_hooks.rb
+37 silly gunzTarPerm extractEntry assets/features/android/support/cucumber.yml
+38 silly gunzTarPerm extractEntry assets/features/android/support/hooks.rb
+39 silly gunzTarPerm extractEntry assets/features/home_screen.feature
+40 silly gunzTarPerm extractEntry assets/features/ios/helpers/utils_ios.rb
+41 silly gunzTarPerm extractEntry assets/features/ios/pages/.gitkeep
+42 silly gunzTarPerm extractEntry assets/features/ios/support/01_launch.rb
+43 silly gunzTarPerm extractEntry assets/features/ios/support/02_pre_stop_hooks.rb
+44 silly gunzTarPerm extractEntry assets/features/ios/support/cucumber.yml
+45 silly gunzTarPerm extractEntry assets/features/step_definitions/calabash_steps.rb
+46 silly gunzTarPerm extractEntry assets/features/support/env.rb
+47 silly gunzTarPerm extractEntry .ruby-version
+48 silly gunzTarPerm extractEntry lib/exec.js
+49 silly gunzTarPerm extractEntry lib/run_android.js
+50 silly gunzTarPerm extractEntry lib/run_ios.js
+51 silly gunzTarPerm extractEntry test/run_android_spec.js
+52 silly gunzTarPerm extractEntry test/run_ios_spec.js
+53 silly gunzTarPerm extractEntry test/mocha.opts
+54 silly gunzTarPerm extractEntry test/test_harness/README.md
+55 silly gunzTarPerm extractEntry test/test_harness/CHANGELOG.txt
+56 silly gunzTarPerm extractEntry test/test_harness/app/README
+57 silly gunzTarPerm extractEntry test/test_harness/app/config.json
+58 silly gunzTarPerm extractEntry test/test_harness/app/controllers/Captured.js
+59 silly gunzTarPerm extractEntry test/test_harness/app/controllers/FugitiveAdd.js
+60 silly gunzTarPerm extractEntry test/test_harness/app/controllers/FugitiveDetail.js
+61 silly gunzTarPerm extractEntry test/test_harness/app/controllers/Fugitives.js
+62 silly gunzTarPerm extractEntry test/test_harness/app/controllers/MapDetail.js
+63 silly gunzTarPerm extractEntry test/test_harness/app/controllers/index.js
+64 silly gunzTarPerm extractEntry test/test_harness/app/migrations/201208231711776_Fugitive.js
+65 silly gunzTarPerm extractEntry test/test_harness/app/models/Fugitive.js
+66 silly gunzTarPerm extractEntry test/test_harness/app/styles/Captured.tss
+67 silly gunzTarPerm extractEntry test/test_harness/app/styles/FugitiveAdd.tss
+68 silly gunzTarPerm extractEntry test/test_harness/app/styles/FugitiveDetail.tss
+69 silly gunzTarPerm extractEntry test/test_harness/app/styles/FugitiveRow.tss
+70 silly gunzTarPerm extractEntry test/test_harness/app/styles/Fugitives.tss
+71 silly gunzTarPerm extractEntry test/test_harness/app/styles/MapDetail.tss
+72 silly gunzTarPerm extractEntry test/test_harness/app/styles/index.tss
+73 silly gunzTarPerm extractEntry test/test_harness/app/views/Captured.xml
+74 silly gunzTarPerm extractEntry test/test_harness/app/views/FugitiveAdd.xml
+75 silly gunzTarPerm extractEntry test/test_harness/app/views/FugitiveDetail.xml
+76 silly gunzTarPerm extractEntry test/test_harness/app/views/FugitiveRow.xml
+77 silly gunzTarPerm extractEntry test/test_harness/app/views/Fugitives.xml
+78 silly gunzTarPerm extractEntry test/test_harness/app/views/MapDetail.xml
+79 silly gunzTarPerm extractEntry test/test_harness/app/views/index.xml
+80 silly gunzTarPerm extractEntry test/test_harness/build/.alloynewcli
+81 silly gunzTarPerm extractEntry test/test_harness/features/android/helpers/utils_android.rb
+82 silly gunzTarPerm extractEntry test/test_harness/features/android/pages/.gitkeep
+83 silly gunzTarPerm extractEntry test/test_harness/features/android/support/app_life_cycle_hooks.rb
+84 silly gunzTarPerm extractEntry test/test_harness/features/android/support/hooks.rb
+85 silly gunzTarPerm extractEntry test/test_harness/features/captured.feature
+86 silly gunzTarPerm extractEntry test/test_harness/features/fugitive.feature
+87 silly gunzTarPerm extractEntry test/test_harness/features/ios/helpers/utils_ios.rb
+88 silly gunzTarPerm extractEntry test/test_harness/features/ios/pages/.gitkeep
+89 silly gunzTarPerm extractEntry test/test_harness/features/ios/support/01_launch.rb
+90 silly gunzTarPerm extractEntry test/test_harness/features/ios/support/02_pre_stop_hooks.rb
+91 silly gunzTarPerm extractEntry test/test_harness/features/step_definitions/calabash_steps.rb
+92 silly gunzTarPerm extractEntry test/test_harness/features/support/env.rb
+93 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/LICENSE
+94 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/documentation/index.html
+95 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/example/app.js
+96 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/libs/armeabi/libti.physicalSizeCategory.so
+97 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/libs/armeabi-v7a/libti.physicalSizeCategory.so
+98 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/libs/x86/libti.physicalSizeCategory.so
+99 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/manifest
+100 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/physicalsizecategory.jar
+101 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/timodule.xml
+102 silly gunzTarPerm extractEntry test/test_harness/plugins/ti.alloy/hooks/alloy.js
+103 silly gunzTarPerm extractEntry test/test_harness/plugins/ti.alloy/plugin.py
+104 silly gunzTarPerm extractEntry test/test_harness/plugins/ti.alloy/plugin.pyc
+105 silly gunzTarPerm extractEntry test/test_harness/tiapp.xml
+106 silly gunzTarPerm extractEntry Gemfile
+107 silly gunzTarPerm extractEntry plugin/calabash.js
+108 silly gunzTarPerm extractEntry install
+109 silly lockFile 2657596b-592773-0-762559725670144-package tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package
+110 silly lockFile 2657596b-592773-0-762559725670144-package tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package
+111 silly lockFile 7f84c347-592773-0-762559725670144-tmp-tgz tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+112 silly lockFile 7f84c347-592773-0-762559725670144-tmp-tgz tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/tmp.tgz
+113 verbose tar pack [ '/Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz',
+113 verbose tar pack   '/var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package' ]
+114 verbose tarball /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+115 verbose folder /var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package
+116 silly lockFile 2657596b-592773-0-762559725670144-package tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package
+117 verbose lock tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package /Users/andrewmcelroy/.npm/2657596b-592773-0-762559725670144-package.lock
+118 silly lockFile 54ce3a8d-pm-ticalabash-1-0-10-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+119 verbose lock tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz /Users/andrewmcelroy/.npm/54ce3a8d-pm-ticalabash-1-0-10-package-tgz.lock
+120 silly lockFile 2657596b-592773-0-762559725670144-package tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package
+121 silly lockFile 2657596b-592773-0-762559725670144-package tar:///var/folders/30/l336z8_x0_d0qlth0p1ngqs80000gn/T/npm-22696/1413073592773-0.762559725670144/package
+122 silly lockFile 54ce3a8d-pm-ticalabash-1-0-10-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+123 silly lockFile 54ce3a8d-pm-ticalabash-1-0-10-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+124 silly lockFile 8cafcd30-oy-npm-ticalabash-1-0-10-package /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package
+125 verbose lock /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package /Users/andrewmcelroy/.npm/8cafcd30-oy-npm-ticalabash-1-0-10-package.lock
+126 silly lockFile 8cafcd30-oy-npm-ticalabash-1-0-10-package /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package
+127 silly lockFile 8cafcd30-oy-npm-ticalabash-1-0-10-package /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package
+128 verbose tar unpack /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+129 silly lockFile c9552c28-oy-npm-ticalabash-1-0-10-package tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package
+130 verbose lock tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package /Users/andrewmcelroy/.npm/c9552c28-oy-npm-ticalabash-1-0-10-package.lock
+131 silly lockFile 54ce3a8d-pm-ticalabash-1-0-10-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+132 verbose lock tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz /Users/andrewmcelroy/.npm/54ce3a8d-pm-ticalabash-1-0-10-package-tgz.lock
+133 silly gunzTarPerm modes [ '755', '644' ]
+134 silly gunzTarPerm extractEntry package.json
+135 silly gunzTarPerm extractEntry .npmignore
+136 silly gunzTarPerm extractEntry README.md
+137 silly gunzTarPerm extractEntry Gemfile.lock
+138 silly gunzTarPerm extractEntry todo
+139 silly gunzTarPerm extractEntry assets/custom_calabash_ios_install.rb
+140 silly gunzTarPerm extractEntry assets/features/android/helpers/utils_android.rb
+141 silly gunzTarPerm extractEntry assets/features/android/pages/.gitkeep
+142 silly gunzTarPerm extractEntry assets/features/android/support/app_life_cycle_hooks.rb
+143 silly gunzTarPerm extractEntry assets/features/android/support/cucumber.yml
+144 silly gunzTarPerm extractEntry assets/features/android/support/hooks.rb
+145 silly gunzTarPerm extractEntry assets/features/home_screen.feature
+146 silly gunzTarPerm extractEntry assets/features/ios/helpers/utils_ios.rb
+147 silly gunzTarPerm extractEntry assets/features/ios/pages/.gitkeep
+148 silly gunzTarPerm extractEntry assets/features/ios/support/01_launch.rb
+149 silly gunzTarPerm extractEntry assets/features/ios/support/02_pre_stop_hooks.rb
+150 silly gunzTarPerm extractEntry assets/features/ios/support/cucumber.yml
+151 silly gunzTarPerm extractEntry assets/features/step_definitions/calabash_steps.rb
+152 silly gunzTarPerm extractEntry assets/features/support/env.rb
+153 silly gunzTarPerm extractEntry .ruby-version
+154 silly gunzTarPerm extractEntry lib/exec.js
+155 silly gunzTarPerm extractEntry lib/run_android.js
+156 silly gunzTarPerm extractEntry lib/run_ios.js
+157 silly gunzTarPerm extractEntry Gemfile
+158 silly gunzTarPerm extractEntry plugin/calabash.js
+159 silly gunzTarPerm extractEntry test/run_android_spec.js
+160 silly gunzTarPerm extractEntry test/run_ios_spec.js
+161 silly gunzTarPerm extractEntry test/mocha.opts
+162 silly gunzTarPerm extractEntry test/test_harness/README.md
+163 silly gunzTarPerm extractEntry test/test_harness/CHANGELOG.txt
+164 silly gunzTarPerm extractEntry test/test_harness/app/README
+165 silly gunzTarPerm extractEntry test/test_harness/app/config.json
+166 silly gunzTarPerm extractEntry test/test_harness/app/controllers/Captured.js
+167 silly gunzTarPerm extractEntry test/test_harness/app/controllers/FugitiveAdd.js
+168 silly gunzTarPerm extractEntry test/test_harness/app/controllers/FugitiveDetail.js
+169 silly gunzTarPerm extractEntry test/test_harness/app/controllers/Fugitives.js
+170 silly gunzTarPerm extractEntry test/test_harness/app/controllers/MapDetail.js
+171 silly gunzTarPerm extractEntry test/test_harness/app/controllers/index.js
+172 silly gunzTarPerm extractEntry test/test_harness/app/migrations/201208231711776_Fugitive.js
+173 silly gunzTarPerm extractEntry test/test_harness/app/models/Fugitive.js
+174 silly gunzTarPerm extractEntry test/test_harness/app/styles/Captured.tss
+175 silly gunzTarPerm extractEntry test/test_harness/app/styles/FugitiveAdd.tss
+176 silly gunzTarPerm extractEntry test/test_harness/app/styles/FugitiveDetail.tss
+177 silly gunzTarPerm extractEntry test/test_harness/app/styles/FugitiveRow.tss
+178 silly gunzTarPerm extractEntry test/test_harness/app/styles/Fugitives.tss
+179 silly gunzTarPerm extractEntry test/test_harness/app/styles/MapDetail.tss
+180 silly gunzTarPerm extractEntry test/test_harness/app/styles/index.tss
+181 silly gunzTarPerm extractEntry test/test_harness/app/views/Captured.xml
+182 silly gunzTarPerm extractEntry test/test_harness/app/views/FugitiveAdd.xml
+183 silly gunzTarPerm extractEntry test/test_harness/app/views/FugitiveDetail.xml
+184 silly gunzTarPerm extractEntry test/test_harness/app/views/FugitiveRow.xml
+185 silly gunzTarPerm extractEntry test/test_harness/app/views/Fugitives.xml
+186 silly gunzTarPerm extractEntry test/test_harness/app/views/MapDetail.xml
+187 silly gunzTarPerm extractEntry test/test_harness/app/views/index.xml
+188 silly gunzTarPerm extractEntry test/test_harness/build/.alloynewcli
+189 silly gunzTarPerm extractEntry test/test_harness/features/android/helpers/utils_android.rb
+190 silly gunzTarPerm extractEntry test/test_harness/features/android/pages/.gitkeep
+191 silly gunzTarPerm extractEntry test/test_harness/features/android/support/app_life_cycle_hooks.rb
+192 silly gunzTarPerm extractEntry test/test_harness/features/android/support/hooks.rb
+193 silly gunzTarPerm extractEntry test/test_harness/features/captured.feature
+194 silly gunzTarPerm extractEntry test/test_harness/features/fugitive.feature
+195 silly gunzTarPerm extractEntry test/test_harness/features/ios/helpers/utils_ios.rb
+196 silly gunzTarPerm extractEntry test/test_harness/features/ios/pages/.gitkeep
+197 silly gunzTarPerm extractEntry test/test_harness/features/ios/support/01_launch.rb
+198 silly gunzTarPerm extractEntry test/test_harness/features/ios/support/02_pre_stop_hooks.rb
+199 silly gunzTarPerm extractEntry test/test_harness/features/step_definitions/calabash_steps.rb
+200 silly gunzTarPerm extractEntry test/test_harness/features/support/env.rb
+201 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/LICENSE
+202 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/documentation/index.html
+203 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/example/app.js
+204 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/libs/armeabi/libti.physicalSizeCategory.so
+205 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/libs/armeabi-v7a/libti.physicalSizeCategory.so
+206 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/libs/x86/libti.physicalSizeCategory.so
+207 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/manifest
+208 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/physicalsizecategory.jar
+209 silly gunzTarPerm extractEntry test/test_harness/modules/android/ti.physicalsizecategory/1.0/timodule.xml
+210 silly gunzTarPerm extractEntry test/test_harness/plugins/ti.alloy/hooks/alloy.js
+211 silly gunzTarPerm extractEntry test/test_harness/plugins/ti.alloy/plugin.py
+212 silly gunzTarPerm extractEntry test/test_harness/plugins/ti.alloy/plugin.pyc
+213 silly gunzTarPerm extractEntry test/test_harness/tiapp.xml
+214 silly gunzTarPerm extractEntry install
+215 silly lockFile c9552c28-oy-npm-ticalabash-1-0-10-package tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package
+216 silly lockFile c9552c28-oy-npm-ticalabash-1-0-10-package tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package
+217 silly lockFile 54ce3a8d-pm-ticalabash-1-0-10-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+218 silly lockFile 54ce3a8d-pm-ticalabash-1-0-10-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz
+219 verbose chmod /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz 644
+220 verbose chown /Users/andrewmcelroy/.npm/ticalabash/1.0.10/package.tgz [ 501, 20 ]
+221 silly lockFile 3a52ce78- .
+222 silly lockFile 3a52ce78- .
+223 silly publish { name: 'ticalabash',
+223 silly publish   version: '1.0.10',
+223 silly publish   description: 'A wrapper for the Calabash testing framework for use with Titanium Mobile',
+223 silly publish   scripts: { postinstall: 'node install', test: 'mocha test -w' },
+223 silly publish   repository:
+223 silly publish    { type: 'git',
+223 silly publish      url: 'http://github.com/appersonlabs/TiCalabash' },
+223 silly publish   keywords: [ 'calabash', 'titanium', 'mobile', 'ios', 'android' ],
+223 silly publish   maintainers:
+223 silly publish    [ { name: 'Matt Apperson', email: 'matt@appersonlabs.com' },
+223 silly publish      { name: 'Andrew McElroy', email: 'amcelroy@codexlabs.com' } ],
+223 silly publish   license: 'MIT',
+223 silly publish   bugs: { url: 'https://github.com/appersonlabs/TiCalabash/issues' },
+223 silly publish   homepage: 'https://github.com/appersonlabs/TiCalabash',
+223 silly publish   dependencies:
+223 silly publish    { commander: '^2.1.0',
+223 silly publish      pkginfo: '^0.3.0',
+223 silly publish      'node-appc': '^0.2.0',
+223 silly publish      tiapp: '0.0.2' },
+223 silly publish   devDependencies: { mocha: '*', should: '>= 0.0.1' },
+223 silly publish   readme: '## This is beta software ##\n the single biggest reason is because of the ruby dependency\nif you  do not have either rvm or rbenv installed then you may have issues installing this package\n system ruby for mac can have issues\n the designation from beta to full production is a high priority and moving quickly.\n\n\n# TiCalabash Package\n\n[![NPM](https://nodei.co/npm/ticalabash.png)](https://nodei.co/npm/ticalabash/)\n\nYes. Calabash for Appcelerator Titanium (vanilla and Alloy) iOS and Android\nThis includes to physical devices as well as Simulators/Emulators\n\n## Getting Started\nInstall the module with: `npm install -g ticalabash`\n\n\n## Examples\n`ti calabash --platform=[android,ios] `\n\n## Presentation\nThe following slide deck may be of use: http://www.slideshare.net/sophrinix/ticalabash-fully-automated-testing-ticonf-eu-2014\n\nIf you don\'t have a features directory at the project root level, it will be created.\nThe calabash command will rebuild your android or iOS binary every time.\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality.\n\n## Release History\n1.0.4 - Added Sample features\n1.0.0 - TiCalabash wraps calabash\n\n\n## License\nLicense: MIT (c) 2014\nMatt Apperson / Apperson Labs\nAndrew McElroy / Codex Labs, LLC\n',
+223 silly publish   readmeFilename: 'README.md',
+223 silly publish   _id: 'ticalabash@1.0.10',
+223 silly publish   dist: { shasum: '1d7fb15358678a258824c04b7724fe24e86559e1' },
+223 silly publish   _from: '.' }
+224 verbose url raw ticalabash
+225 verbose url resolving [ 'https://registry.npmjs.org/', './ticalabash' ]
+226 verbose url resolved https://registry.npmjs.org/ticalabash
+227 info trying registry request attempt 1 at 19:26:33
+228 http PUT https://registry.npmjs.org/ticalabash
+229 http 201 https://registry.npmjs.org/ticalabash
+230 verbose url raw ticalabash
+231 verbose url resolving [ 'https://registry.npmjs.org/', './ticalabash' ]
+232 verbose url resolved https://registry.npmjs.org/ticalabash
+233 info trying registry request attempt 1 at 19:26:34
+234 http GET https://registry.npmjs.org/ticalabash
+235 http 200 https://registry.npmjs.org/ticalabash
+236 error publish fail Cannot publish over existing version.
+236 error publish fail Update the 'version' field in package.json and try again.
+236 error publish fail
+236 error publish fail If the previous version was published in error, see:
+236 error publish fail     npm help unpublish
+236 error publish fail
+236 error publish fail To automatically increment version numbers, see:
+236 error publish fail     npm help version
+237 error System Darwin 13.4.0
+238 error command "node" "/usr/local/bin/npm" "publish"
+239 error cwd /Users/andrewmcelroy/Desktop/TiCalabash
+240 error node -v v0.10.13
+241 error npm -v 1.3.2
+242 error code EPUBLISHCONFLICT
+243 verbose exit [ 1, true ]
