@@ -13,13 +13,13 @@ console.log('--- Installing Build Command(s) ---');
 
 exec('ruby', ['-v'], null, function(e) {
 
-	exec('gem', ['install', 'bundler'], null, function(e) {
+	exec('sudo', ['gem','install', 'bundler'], null, function(e) {
 			// I either need to try catch this or somehow verify that I have bundle
 		exec('bundle', ['install'], null, function(e) {
 
 			// I am making the assumption that I have titanium. This really should be challenged  
 			exec('ti', ['config', '-a', 'paths.commands', path.join( __dirname , 'plugin')], null, function() {
-			console.info('Titanium CLI command installed.');
+			console.info('Titanium CLI command calabash installed.');
 
 			});
 		});
