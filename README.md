@@ -14,7 +14,7 @@ Use sudo before npm install if you get an `Error: EACCES` message.
 
 ## Controversial but correct answer
 Appcelerator installs npm in such a way that it requires on a Mac or Linux that you use sudo.
-This is technically wrong when viewed by from the nodeJS perspective.
+This is technically wrong when viewed by from the NodeJS perspective.
 The following explanation is how to fix this issue. 
 
 **No Warranty is provided for this solution.**
