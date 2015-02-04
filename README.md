@@ -101,6 +101,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ## Release History
 1.1.2 - Updated calabash-android to 0.5.5 and calabash-cucumber to 0.12.2 ( iOS 8 compatibility)
 1.0.4 - Added Sample features
+
 1.0.0 - TiCalabash wraps calabash
 
 
