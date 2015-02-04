@@ -6,16 +6,24 @@
 Yes. Calabash for Appcelerator Titanium (vanilla and Alloy) iOS and Android
 This includes to physical devices as well as Simulators/Emulators
 
-## Getting Started
+## Getting Started (safe answer)
 Install the module with: `npm install -g ticalabash`
 
 Enter the password you normally enter for `sudo` when requested.
+Use sudo before npm install if you get an `Error: EACCES` message.
 
-Don't use `sudo npm install` yourself, because it is bad practise and will break the installation process. It's better to correctly set the permissions on the `/usr/local` directory instead, so you don't have to ever use `sudo` again when installing npm packages.
+## Controversial but correct answer
+Appcelerator installs npm in such a way that it requires on a Mac or Linux that you use sudo.
+This is technically wrong when viewed by from the nodeJS perspective.
+The following explanation is how to fix this issue. 
+
+**No Warranty is provided for this solution.**
+Don't use `sudo npm install` yourself, because it is bad practice and will break the installation process. It's better to correctly set the permissions on the `/usr/local` directory instead, so you don't have to ever use `sudo` again when installing npm packages.
 
 ```
 sudo chown -R $USER /usr/local
 ```
+This solution presumes you are a single user on the machine.
 
 ## Example
 To test TiCalabash, create a default Alloy application and run:
