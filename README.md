@@ -1,8 +1,3 @@
-## This is beta software ##
- the single biggest reason is because of the ruby dependency
-if you  do not have either rvm or rbenv installed then you may have issues installing this package
- system ruby for mac can have issues
- the designation from beta to full production is a high priority and moving quickly.
 
 # TiCalabash Package
 
@@ -69,6 +64,8 @@ Recording of touches is currently not supported, for two reasons:
 * It does not work anymore with Calabash iOS on iOS 7+ 
 * Has never been implemented in Calabash Android
 
+
+
 ## Presentation
 The following slide deck may be of use: [TiCalabash: Fully automated Acceptance Testing @ TiConf EU 2014](http://www.slideshare.net/sophrinix/ticalabash-fully-automated-testing-ticonf-eu-2014)
 
@@ -91,10 +88,18 @@ cp "~/Library/Application Support/iPhone Simulator/7.1/Applications/$AppGUID/Doc
 
 Make sure you replace the folders with the actual folders on your system.
 
+## Strider configuration
+soon.
+A strider module that seamlessly integrates with TiCalabash is coming whenever Andrew can finish the module. 
+
+## Training
+Training by Codex Labs for TiCalabash is in the planning stage.
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality.
 
 ## Release History
+1.1.2 - Updated calabash-android to 0.5.5 and calabash-cucumber to 0.12.2 ( iOS 8 compatibility)
 1.0.4 - Added Sample features
 1.0.0 - TiCalabash wraps calabash
 
