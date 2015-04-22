@@ -1,6 +1,6 @@
 {
   "name": "ticalabash",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "A wrapper for the Calabash testing framework for use with Titanium Mobile",
   "scripts": {
     "postinstall": "node install",
@@ -27,6 +27,12 @@
       "email": "amcelroy@codexlabs.com"
     }
   ],
+  "contributors": [
+    {
+      "name": "Matthias Benkort",
+      "email": "matthias.benkort@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appersonlabs/TiCalabash/issues"
@@ -34,12 +40,14 @@
   "homepage": "https://github.com/appersonlabs/TiCalabash",
   "dependencies": {
     "commander": "^2.1.0",
-    "pkginfo": "^0.3.0",
     "node-appc": "^0.2.0",
-		"tiapp":"0.0.2"
+    "pkginfo": "^0.3.0",
+    "tiapp": "0.0.2",
+    "underscore": "^1.8.3",
+    "xml2js": "^0.4.8"
   },
-   "devDependencies": {
-   "mocha": "*",
-   "should": ">= 0.0.1"
- }
+  "devDependencies": {
+    "mocha": "*",
+    "should": ">= 0.0.1"
+  }
 }
