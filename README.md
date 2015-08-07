@@ -74,9 +74,9 @@ Recording of touches is currently not supported, for two reasons:
 * Has never been implemented in Calabash Android
 
 ##Training
-Codexcasts.com is producing a two part series on how to use TiCalabash.
-[TiCalabash:Getting Started](https://codexcasts.com/episodes/ticalabash-getting-started)
-[TiCalabash: Intermediate Testing -- Coming Aug 11,2015]()
+Codexcasts.com is producing a two part series on how to use TiCalabash.   
+[TiCalabash:Getting Started](https://codexcasts.com/episodes/ticalabash-getting-started)   
+[TiCalabash: Intermediate Testing -- Coming Aug 11,2015]()   
 After these two episode are releases, Codex Labs, LLC will be checking the feedback to see if producting an Advanced episode has enough interest. stay tuned :-)
 
 ## Presentation
