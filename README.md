@@ -2,7 +2,7 @@
 
 # TiCalabash Package
 
-[![NPM](https://nodei.co/npm/ticalabash.png)](https://nodei.co/npm/ticalabash/)
+[![NPM](https://nodei.co/npm/ticalabash.png)](https://nodei.co/npm/ticalabash/) [![npm downloads](https://img.shields.io/npm/dm/ticalabash.svg?style=flat-square)](https://www.npmjs.com/package/ticalabash) [![Code Climate](https://codeclimate.com/github/appersonlabs/TiCalabash/badges/gpa.svg)](https://codeclimate.com/github/appersonlabs/TiCalabash)
 
 Yes. Calabash for Appcelerator Titanium (vanilla and Alloy) iOS and Android
 This includes to physical devices as well as Simulators/Emulators
