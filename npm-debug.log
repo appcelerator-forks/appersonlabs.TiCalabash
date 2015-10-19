@@ -1,21 +1,113 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.37
-4 error install Couldn't read dependencies
-5 error Failed to parse json
-5 error Unexpected token <
-6 error File: /Users/andrewmcelroy/repos/TiCalabash/package.json
-7 error Failed to parse package.json data.
-7 error package.json must be actual JSON, not just JavaScript.
-7 error
-7 error This is not a bug in npm.
-7 error Tell the package author to fix their package.json file. JSON.parse
-8 error System Darwin 14.5.0
-9 error command "node" "/usr/local/bin/npm" "install"
-10 error cwd /Users/andrewmcelroy/repos/TiCalabash
-11 error node -v v0.10.37
-12 error npm -v 1.4.28
-13 error file /Users/andrewmcelroy/repos/TiCalabash/package.json
-14 error code EJSONPARSE
-15 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/andrewmcelroy/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/andrewmcelroy/.npm/ticalabash/1.4.5/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/andrewmcelroy/.npm/ticalabash/1.4.5/package.tgz
+12 verbose folder .
+13 info prepublish ticalabash@1.4.5
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/andrewmcelroy/.npm/1f1177db-tar.lock
+16 silly lockFile 48f03611-npm-ticalabash-1-4-5-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.4.5/package.tgz
+17 verbose lock tar:///Users/andrewmcelroy/.npm/ticalabash/1.4.5/package.tgz /Users/andrewmcelroy/.npm/48f03611-npm-ticalabash-1-4-5-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 48f03611-npm-ticalabash-1-4-5-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.4.5/package.tgz
+21 silly lockFile 48f03611-npm-ticalabash-1-4-5-package-tgz tar:///Users/andrewmcelroy/.npm/ticalabash/1.4.5/package.tgz
+22 silly lockFile b9a7d673-roy-npm-ticalabash-1-4-5-package /Users/andrewmcelroy/.npm/ticalabash/1.4.5/package
+23 verbose lock /Users/andrewmcelroy/.npm/ticalabash/1.4.5/package /Users/andrewmcelroy/.npm/b9a7d673-roy-npm-ticalabash-1-4-5-package.lock
+24 silly lockFile b9a7d673-roy-npm-ticalabash-1-4-5-package /Users/andrewmcelroy/.npm/ticalabash/1.4.5/package
+25 silly lockFile b9a7d673-roy-npm-ticalabash-1-4-5-package /Users/andrewmcelroy/.npm/ticalabash/1.4.5/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'ticalabash',
+28 silly publish   version: '1.4.5',
+28 silly publish   description: 'A wrapper for the Calabash testing framework for use with Titanium Mobile',
+28 silly publish   scripts: { postinstall: 'node install', test: 'mocha test -w' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'http://github.com/appersonlabs/TiCalabash' },
+28 silly publish   keywords: [ 'calabash', 'titanium', 'mobile', 'ios', 'android' ],
+28 silly publish   maintainers:
+28 silly publish    [ { name: 'Matt Apperson', email: 'matt@appersonlabs.com' },
+28 silly publish      { name: 'Andrew McElroy', email: 'amcelroy@codexlabs.com' } ],
+28 silly publish   contributors:
+28 silly publish    [ { name: 'Matthias Benkort',
+28 silly publish        email: 'matthias.benkort@gmail.com' } ],
+28 silly publish   license: 'MIT',
+28 silly publish   bugs: { url: 'https://github.com/appersonlabs/TiCalabash/issues' },
+28 silly publish   homepage: 'https://github.com/appersonlabs/TiCalabash',
+28 silly publish   dependencies:
+28 silly publish    { commander: '^2.9.0',
+28 silly publish      'node-appc': '^0.2.33',
+28 silly publish      pkginfo: '^0.3.0',
+28 silly publish      tiapp: '0.0.2',
+28 silly publish      underscore: '^1.8.3',
+28 silly publish      xml2js: '0.4.13' },
+28 silly publish   devDependencies: { mocha: '*', should: '>= 0.0.1' },
+28 silly publish   readme: '## Notice: You must have titanium npm package installed. `npm install -g titanium` . The appc npm package is not compatible.\n\n# TiCalabash Package\n\n[![NPM](https://nodei.co/npm/ticalabash.png)](https://nodei.co/npm/ticalabash/) [![npm downloads](https://img.shields.io/npm/dm/ticalabash.svg?style=flat-square)](https://www.npmjs.com/package/ticalabash) [![Code Climate](https://codeclimate.com/github/appersonlabs/TiCalabash/badges/gpa.svg)](https://codeclimate.com/github/appersonlabs/TiCalabash)\n\nYes. Calabash for Appcelerator Titanium (vanilla and Alloy) iOS and Android\nThis includes to physical devices as well as Simulators/Emulators\n\n## Getting Started (safe answer)\nInstall the module with: `npm install -g ticalabash`\n\nEnter the password you normally enter for `sudo` when requested.\nUse sudo before npm install if you get an `Error: EACCES` message.\n\n## Controversial but correct answer\nAppcelerator installs npm in such a way that it requires on a Mac or Linux that you use sudo.\nThis is technically wrong when viewed by from the Node.js perspective.\nThe following explanation is how to fix this issue. \n\n**No Warranty is provided for this solution.**\nDon\'t use `sudo npm install` yourself, because it is bad practice and will break the installation process. It\'s better to correctly set the permissions on the `/usr/local` directory instead, so you don\'t have to ever use `sudo` again when installing npm packages.\n\n```\nsudo chown -R $USER /usr/local\n```\nThis solution presumes you are a single user on the machine.\n\n## Example\nTo test TiCalabash, create a default Alloy application and run:\n`ti calabash --platform=[android,ios]`\n\n* On iOS: Just press enter when asked which target to duplicate.\n* On Android: Make sure your emulator (hint: Use [Genymotion](http://www.genymotion.com)) should already be running.\n\nAfter lots of compiling, you should see:\n```\nFeature: Home Screen\n  As an App Developer\n  I want to see an example feature work on a default alloy app\n  So that I can start using TiCalabash quickly\n\n  Scenario: See Home Screen                          # features/home_screen.feature:6\n    Given I am on the Home Screen                    # features/step_definitions/ticalabash_custom_steps.rb:1\n    Then I should see text containing "Hello, World" # calabash-cucumber-0.11.3/features/step_definitions/calabash_steps.rb:384\n    And take picture                                 # calabash-cucumber-0.11.3/features/step_definitions/calabash_steps.rb:229\n\n1 scenario (1 passed)\n3 steps (3 passed)\n```\n\nThe picture/screenshot is named `screenshot_X.png` and can be found in:\n* On iOS: the `build/iphone` folder.\n* On Android: the project root folder.\n\n## Documentation\nBecause TiCalabash is wrapping [Calabash](http://calaba.sh), please use Calabash\'s documentation to learn how to use Calabash together with [Cucumber](http://cukes.info):\n* [Calabash iOS documentation](https://github.com/calabash/calabash-ios/wiki/00-Calabash-iOS-documentation)\n* [Calabash Android documentation](https://github.com/calabash/calabash-android/blob/master/README.md)\n\n(The iOS documentation is far superior to the Android documentation and is mostly valid for Android as well). \n\nIf you don\'t have a features directory at the project root level, it will be created.\nThe `ti calabash` command will rebuild your Android or iOS app every time.\n\n**Querying your UI**\n* On [iOS](https://github.com/calabash/calabash-ios/wiki/05-Query-syntax)\n* On [Android](http://blog.lesspainful.com/2012/12/18/Android-Query/ )\n \n**Recording Touches**\n\nRecording of touches is currently not supported, for two reasons:\n* It does not work anymore with Calabash iOS on iOS 7+ \n* Has never been implemented in Calabash Android\n\n##Training\nCodexcasts.com is producing a two part series on how to use TiCalabash.   \n[TiCalabash:Getting Started](https://codexcasts.com/episodes/ticalabash-getting-started)   \n[TiCalabash: Intermediate Testing -- Coming Aug 11,2015]()   \nAfter these two episode are releases, Codex Labs, LLC will be checking the feedback to see if producting an Advanced episode has enough interest. stay tuned :-)\n\n## Presentation\nThe following slide deck may be of use: [TiCalabash: Fully automated Acceptance Testing @ TiConf EU 2014](http://www.slideshare.net/sophrinix/ticalabash-fully-automated-testing-ticonf-eu-2014)\n\n## Jenkins configuration\nIf you want to integrate TiCalabash in Jenkins, use the following configuration:\n```\ncd ~/Desktop/ticonf2014testappdemo/alloytest # or actually pull from git. \ntitanium clean titanium build --platform=iphone --test & \nsleep 30 \nkillall "iPhone Simulator" \n\nexport PATH=“/Users/andrewmcelroy/.rbenv/shims:/Users/andrewmcelroy/bin:/usr/local/bin: /Users/andrewmcelroy/.rbenv/bin:/Users/andrewmcelroy/android/tools:/Users/andrewmcelroy/android/: /Users/andrewmcelroy/android//tools:/Users/andrewmcelroy/android/platform-tools/:/usr/bin:/bin: /usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:" \n\necho | titanium calabash —platform=iphone\ncd ~/Library/Application Support/iPhone Simulator/7.1/Applications/ \nAppGUID = $(ﬁnd . -name "alloytest" | cut -d "/" -f 2) \n\ncp "~/Library/Application Support/iPhone Simulator/7.1/Applications/$AppGUID/Documents/jenkins.xml" $WORKSPACE/jenkins.xml\n```\n\nMake sure you replace the folders with the actual folders on your system.\n\n## Strider configuration\nsoon.\nA strider module that seamlessly integrates with TiCalabash is coming whenever Andrew can finish the module. \n\n## Training\nTraining by Codex Labs for TiCalabash is in the planning stage.\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality.\n\n## Release History\n1.1.2 - Updated calabash-android to 0.5.5 and calabash-cucumber to 0.12.2 ( iOS 8 compatibility)\n1.0.4 - Added Sample features\n\n1.0.0 - TiCalabash wraps calabash\n\n\n## License\nLicense: MIT (c) 2014\nMatt Apperson / Apperson Labs\nAndrew McElroy / Codex Labs, LLC\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '1b107c046447fa17f18df5e9b49bee5633d2bed4',
+28 silly publish   _id: 'ticalabash@1.4.5',
+28 silly publish   _shasum: 'fd5f9360997a8952e1a7f3e94668227d6f5edd1a',
+28 silly publish   _from: '.' }
+29 verbose request where is /ticalabash
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id de7e0537d68c719d
+32 verbose url raw /ticalabash
+33 verbose url resolving [ 'https://registry.npmjs.org/', './ticalabash' ]
+34 verbose url resolved https://registry.npmjs.org/ticalabash
+35 verbose request where is https://registry.npmjs.org/ticalabash
+36 info trying registry request attempt 1 at 09:22:22
+37 http PUT https://registry.npmjs.org/ticalabash
+38 http 403 https://registry.npmjs.org/ticalabash
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Mon, 19 Oct 2015 14:22:24 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-iad2138-IAD',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1445264543.561568,VS0,VE1260' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 1.4.5." : ticalabash
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:448:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.5.0
+44 error command "node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/andrewmcelroy/repos/TiCalabash
+46 error node -v v0.10.37
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
