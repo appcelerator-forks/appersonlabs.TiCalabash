@@ -1,6 +1,6 @@
 {
   "name": "ticalabash",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "A wrapper for the Calabash testing framework for use with Titanium Mobile",
   "scripts": {
     "postinstall": "node install",
@@ -39,12 +39,12 @@
   },
   "homepage": "https://github.com/appersonlabs/TiCalabash",
   "dependencies": {
-    "commander": "^2.1.0",
-    "node-appc": "^0.2.0",
+    "commander": "^2.9.0",
+    "node-appc": "^0.2.33",
     "pkginfo": "^0.3.0",
     "tiapp": "0.0.2",
     "underscore": "^1.8.3",
-    "xml2js": "0.4.9"
+    "xml2js": "0.4.13"
   },
   "devDependencies": {
     "mocha": "*",
