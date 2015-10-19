@@ -1,7 +1,8 @@
+## Notice: You must have titanium npm package installed. `npm install -g titanium` . The appc npm package is not compatible.
 
 # TiCalabash Package
 
-[![NPM](https://nodei.co/npm/ticalabash.png)](https://nodei.co/npm/ticalabash/)
+[![NPM](https://nodei.co/npm/ticalabash.png)](https://nodei.co/npm/ticalabash/) [![npm downloads](https://img.shields.io/npm/dm/ticalabash.svg?style=flat-square)](https://www.npmjs.com/package/ticalabash) [![Code Climate](https://codeclimate.com/github/appersonlabs/TiCalabash/badges/gpa.svg)](https://codeclimate.com/github/appersonlabs/TiCalabash)
 
 Yes. Calabash for Appcelerator Titanium (vanilla and Alloy) iOS and Android
 This includes to physical devices as well as Simulators/Emulators
@@ -72,7 +73,11 @@ Recording of touches is currently not supported, for two reasons:
 * It does not work anymore with Calabash iOS on iOS 7+ 
 * Has never been implemented in Calabash Android
 
-
+##Training
+Codexcasts.com is producing a two part series on how to use TiCalabash.   
+[TiCalabash:Getting Started](https://codexcasts.com/episodes/ticalabash-getting-started)   
+[TiCalabash: Intermediate Testing -- Coming Aug 11,2015]()   
+After these two episode are releases, Codex Labs, LLC will be checking the feedback to see if producting an Advanced episode has enough interest. stay tuned :-)
 
 ## Presentation
 The following slide deck may be of use: [TiCalabash: Fully automated Acceptance Testing @ TiConf EU 2014](http://www.slideshare.net/sophrinix/ticalabash-fully-automated-testing-ticonf-eu-2014)
